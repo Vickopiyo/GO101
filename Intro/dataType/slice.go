@@ -23,7 +23,6 @@ func main()  {
 	  fmt.Println(numbers)     
 
 	//More examples of Slices 
-
 	  months :=[]string{"Jan", "Feb", "March", "April"}     
 
 	  fmt.Printf("Length of months: %v cap: %v,  %p \n",  len(months), cap(months), months)      

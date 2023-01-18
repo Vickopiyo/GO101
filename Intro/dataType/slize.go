@@ -49,8 +49,26 @@ func main() {
 		fmt.Printf("length: %d, capacity: %d, address: %p\n", len(s), cap(s), s)
 		s = append(s, i)
 
-		//  slices using make(arr,len, cap)
-
 	}
+	//  slices using make(arr,len, cap)
+      students := make([]int,4,5)     
+    // students[4]= 9033 ----Does not work becuase index 4 is out of range but can use append() to add item 
+      students=append(students, 9033)      
+	  fmt.Printf("Admision numbers of students slice : %d and  cap of %d ..List %v \n",len(students), cap(students), students )
+
+      
+      z := []int{2, 3, 5, 7, 11, 13}
+    // outputs 3,5,7
+	z = z[1:4]  
+	fmt.Println(s)
+  //outputs 3,5---it refrences the latest z(slice)  which is 3,5,7     
+	z = z[:2]
+	fmt.Println(s)
+// outputs 5 ---it references 3,5-
+	z = z[1:]
+	fmt.Println(s)
+
+
+
 
 }
