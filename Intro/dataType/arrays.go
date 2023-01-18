@@ -23,7 +23,6 @@ names :=[4]string{"VIck","Okoth", "Opiyo", "Mboya"}
 ages :=[3]int{2,4,5}
 fmt.Println(ages)  
 fmt.Println(names)   
-
 // ELLIPSIS--used to pass varying number of arguments into a func(variadic--func that takes varying number of argument) or array 
 colors :=[...]string{"Red","blue", "green"}  
 // len(arr)--returns number of element in the array or any datatype passed into it.
@@ -42,20 +41,26 @@ colors :=[...]string{"Red","blue", "green"}
 	fmt.Println(subSchool, len(subSchool))    
 	// Passing of data in arrays by Value and reference
 	//  BY VALUE--games  uses the values used intializing   
-	
 	games :=[...]string{"Football", "Hockey", "Rugby", "Basketball"}  
 	// Value passed by Values 
 	games1 := games  
 	fmt.Printf("Original string is :  %v \n", games)  
 	fmt.Printf("Array passed by Value: %v  \n", games1)   
-	// BY REFERENCE --the amperstand (&) checks the current value of schools  and uses it 
+	// BY REFERENCE --the amperstand (&) checks the current value of games  and uses it 
       games2 := &games    
-    
 	// Reassigning schools to see diff in passing data using value and by reference   
        games[0]= "Futaaa"  
 	   fmt.Printf("Original games  is : %v \n", games)   
 	   fmt.Printf("Games 1 is : %v \n", games1)     
 	//    Games 2 was passed by reference and the asterisk is used as pointer deference(takes value of variable ponted to it)
-	   fmt.Printf("Games 2 is %v \n ", *games2)
-     
-	}   
+	   fmt.Printf("Games 2 is %v \n", *games2)           
+	//    FILTERING Sub Arrays VALUES of Arrays using colons     
+    //    The last index in the bracket notation must be greater than the first 
+        fmt.Printf("sub Array from second to last %v, \n", games[1:])         
+		// Last index in the bracket notation indicates where sub array ends.So it prints item[1], item[2], item[3]
+		fmt.Printf("Sub Array from second item to third item: %v \n", games[1:3])  
+		fmt.Printf("From start but ends at index 3 : %v \n", games[:3]) 
+		fmt.Printf("Last item of array: %v \n", games[len(games)-1])          
+	}                
+	
+	
