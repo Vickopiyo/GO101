@@ -52,7 +52,7 @@ colors :=[...]string{"Red","blue", "green"}
        games[0]= "Futaaa"  
 	   fmt.Printf("Original games  is : %v \n", games)   
 	   fmt.Printf("Games 1 is : %v \n", games1)     
-	//    Games 2 was passed by reference and the asterisk is used as pointer deference(takes value of variable ponted to it)
+	//    Games 2 was passed by reference and the asterisk is used as POINTER DEFERENCE(takes value of variable pointed to it)
 	   fmt.Printf("Games 2 is %v \n", *games2)           
 	//    FILTERING Sub Arrays VALUES of Arrays using colons     
     //    The last index in the bracket notation must be greater than the first 
@@ -63,4 +63,4 @@ colors :=[...]string{"Red","blue", "green"}
 		fmt.Printf("Last item of array: %v \n", games[len(games)-1])          
 	}                
 	
-	
+	         
