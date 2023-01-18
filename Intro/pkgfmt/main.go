@@ -22,10 +22,10 @@ func main() {
                     
 	fmt.Printf("My age is %T :", age)
       
-	// Println--prints but with a new  line at the end as a default   
+	// Println--prints to standard output  but with a new  line at the end as a default   
 	// default space added at the end of printing mutiple values and  variables 
-	// Print-prints output in a line and concatenates with another print  
-	// PRINTF----prints outputs but formattted accdording to description above    
+	// Print-prints output in a line and concatenates with another print     
+	// PRINTF----prints outputs but formattted accdording to description above ..Does not add new line by default    
 	// Sprintf is similar to printf writes data into character Array whereas printf  writes data into stdout, standard output device
 	// %s--string %d--digit  while %v--default format which is prefferable because variable my change in type
 	// %T outputs type of value whether int, string, bool, e.t.c   

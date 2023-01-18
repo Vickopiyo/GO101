@@ -1,7 +1,5 @@
 package main  
 
-import "fmt"
-
 func main()  {   
 	// COMMON DATA TYPES   
 	// string 
@@ -17,4 +15,4 @@ func main()  {
 	// rune--used for characters internally used as 32-bit integers i.e "a","7","<"  
 	// Array --
 }   
-    
+        
