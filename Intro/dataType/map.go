@@ -11,12 +11,11 @@ func main() {
 	subjects := make(map[int]string)
 	fmt.Println(subjects)
 	// Nothing like indeces here..Map is more of an object in JS bt with bracket notation
-	//   The Numbers act like Keys--
+	//fThe Numbers act like Keys--
 	subjects[1] = "Math"
 	subjects[2] = "Chem"
 	subjects[3] = "Hist"
 	subjects[4] = "Bio"
-
 	fmt.Println(subjects)
 	// Reassigning a value in a map
 	subjects[3] = "History"
@@ -24,13 +23,12 @@ func main() {
 	// Delete a key of a map .Accepts two args(map, keyToBedeleted)
 	delete(subjects, 4)
 	fmt.Println(subjects, len(subjects))
-	//   Map with value of slice
-
+	//Map with value of slice
 	students := make(map[string][]string)
-
 	students["VICK"] = []string{"Chem", "Bio", "Math"}
 	students["Eddy"] = []string{"Phyc", "Geo", "BS"}
-
-	fmt.Println(students)
-
+	fmt.Println(students)  
+	// Accessing Value(s)--s if the value is array/slice  of a key in map 
+	fmt.Println(students["VICK"][2])    
+   
 }
