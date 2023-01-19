@@ -65,9 +65,10 @@ users :=make(map[string]string)
 users["Eddy"]= "eddy@gmail.com"   
 users["Vick"]= "vick@gmail.com"  
 
-fmt.Println(users )      
-// checking if key-value pair it  exists in the map ---users 
+fmt.Println(users )  
 
+// checking if key-value pair it  exists in the map ---users 
+// ok--returns a boolean.True if key-value found.Value gives the value of the key if ok is true 
 
 if value, ok :=users["Vick"]; ok {   
 
@@ -75,18 +76,6 @@ if value, ok :=users["Vick"]; ok {
         fmt.Println(value)
 }else{
 	fmt.Println("Sorry User doesnt exist!")
-}
+}         
 
-
-    
-
-
-
-
-
-
-
-
-
-
-}
+}   

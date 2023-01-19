@@ -29,6 +29,7 @@ func main() {
 	// Sprintf is similar to printf writes data into character Array whereas printf  writes data into stdout, standard output device
 	// %s--string %d--digit  while %v--default format which is prefferable because variable my change in type
 	// %T outputs type of value whether int, string, bool, e.t.c   
+	// %p--pointer in memory
       
 	 fmt.Print("What's your telephone number? ")
 	//  Scanln--acts like prompt in jS..It intepretes like above it and takes the input and it is printed below with  no fmt before print
