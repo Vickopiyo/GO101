@@ -17,6 +17,7 @@ func main() {
 	// REASSIGNING VARIABLE         
 	student1  = "VICTOR "
 	// Shortest way of declaring variable declaring and initialization
+	// Variable declareed := are BLOCKED SCOPED----only accessed within the function 
 	// integer--int while dec numbers are float64
 	age := 26
 	fmt.Println(student1, student, age)  

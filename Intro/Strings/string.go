@@ -37,8 +37,7 @@ func isPalindrome(name string) bool{
 
 	// NB NB---  2nd format below executes FIRST Bcz reverseString apppears(compiled first ) first before isPalindrome
 	//  fmt.Println(name)
-     fmt.Println(reverseString(name))    
-	 
+    //  fmt.Println(reverseString(name))    
 	//  reversed string of the input 
 	 reverseName := reverseString(name)     
 //   is the name passed similar to its reverse(palindrome)
@@ -51,6 +50,9 @@ func main() {
 		fmt.Println("Hell yeah! its a palindrome")
 	} else{
 		fmt.Println("OOH its not a palindrome")     
-	}
-	// reverseString("luz azul")
-}    
+	}               
+	// reverseString("luz azul")  
+}       
+
+           
+    

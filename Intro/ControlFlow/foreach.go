@@ -1,8 +1,14 @@
 package main   
 
 import "fmt" 
+     
+func main()  {     
 
-func main()  {  
+
+	// For PERFOMANCE FOR is Better than for ...range 
+	// For DRY for..range is better 
+//    MAIN DIFF btw for and for...range 
+	// The for ... range version creates a copy of the item in the slice you are iterating over. The other, does not and you must access it by reference.
 
 	// looping an array of string using for loop       
       names :=[...]string{"Vick", "Okoth", "Opiyo"}     
