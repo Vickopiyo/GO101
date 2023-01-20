@@ -10,25 +10,26 @@ import "fmt"
 // modifiedVariable(name *string)---this  * binds name to scope it is  found..Any reasinging of name comes *name= "reasssigned "
 // How to call modifiedVriable(&name)---references name in ITS SCOPE thus using same memory address.
 // NUTSHELL-- &--REFERENCES *--BINDS (pointer deference)    
+// Ampersand  -- &name makes a variable from a different scope available in the scope its in.  
 
 
-
-  
 func modifiedVariable(name *string)  { 
 	*name = "Modified Variable"             
 	fmt.Printf("%p \n", name)              
 }        
 
-            
 func main()  {
-	// POINTERS   
+	// POINTERS--All pointer spoint to same address 
   name := "Main variable "   
-  fmt.Printf("%p \n", &name)         
+//   checks where it is referenced from!
+  fmt.Printf("%p \n", &name)      
+  // checks where where name is the that scope
   fmt.Println("It is a ", name)      
-  //  Here a modified variable points to its orignal variable due to its (name *string) 
+  // Here a modified variable points to its orignal variable due to its (name *string) 
   modifiedVariable(&name)     
+//modifiedVariable  REASSIGNS(remember ?? *name="modified variable"??) name variable to its original variable
+  fmt.Println("Which var is this ? ",name)   
   
-//   modifiedVar REASSIGNS(remeber ?? *name="modified variable"??) name variable to its original variable
-  fmt.Println("Which var is this ? ", name)       
-	
+  
+	                                              
 }     
