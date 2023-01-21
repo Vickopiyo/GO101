@@ -14,9 +14,6 @@ func main()  {
 		fmt.Println("Seems Program does not finish correctly ")
 	}      
  }()	
-  
- 
-
 // PANIC and RECOVER    
 // PANIC-- stops ordinary flow of func and begin to pani.When on func F , the F func stops execution..Any DEFFERED func's in there executes NORMALLY.F returns to its caller.To the caller F behaves like a call to panic   
 
@@ -43,6 +40,6 @@ if file, error :=os.Open("globalvare.go") ; error != nil {
 		 fmt.Println(contentArchived)
 	}                        
     //  We are closing the opened file 
-	
-}   
-    
+	  
+}  
+          
