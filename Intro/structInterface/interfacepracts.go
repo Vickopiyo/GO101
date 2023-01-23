@@ -10,7 +10,7 @@ type Geometric  interface {
 	perimeter()  float64
 	                      
 }
-               
+                  
 type Square struct {
 	side float64
 }
