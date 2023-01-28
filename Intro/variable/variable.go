@@ -11,11 +11,12 @@ func main() {
 	// long way to declare variables
 	var student1 string
 	student1 = "Vick"
-	var student string
-	student = "Opiyo"    
+	var student string   
 
+	student = "Opiyo"    
+         
 	// REASSIGNING VARIABLE         
-	student1  = "VICTOR "
+	student1  = "VICTOR "        
 	// Shortest way of declaring variable declaring and initialization
 	// Variable declareed := are BLOCKED SCOPED----only accessed within the function 
 	// integer--int while dec numbers are float64

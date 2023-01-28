@@ -78,4 +78,5 @@ if value, ok :=users["Vick"]; ok {
 	fmt.Println("Sorry User doesnt exist!")
 }         
 
-}   
+}      ''
+          
