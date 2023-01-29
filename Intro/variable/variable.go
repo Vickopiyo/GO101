@@ -1,6 +1,6 @@
 package main
 
-import (
+import (               
 	"fmt"   
 )
 
@@ -10,9 +10,11 @@ func main() {
 	// All imports and variables declared must be used  in GO programms
 	// long way to declare variables
 	var student1 string
-	student1 = "Vick"
-	var student string   
+	student1 = "Vick"      
 
+
+	var student string   
+	
 	student = "Opiyo"    
          
 	// REASSIGNING VARIABLE         
